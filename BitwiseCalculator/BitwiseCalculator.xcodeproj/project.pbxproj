@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FAAF32792A67F9A100FB2115 /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF32782A67F9A000FB2115 /* ScreenView.swift */; };
 		FAAF327B2A68017400FB2115 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF327A2A68017400FB2115 /* CalculatorView.swift */; };
+		FAAF327F2A68090200FB2115 /* ButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF327E2A68090200FB2115 /* ButtonsModel.swift */; };
+		FAAF32832A680B6900FB2115 /* Digits.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF32822A680B6900FB2115 /* Digits.swift */; };
+		FAAF32852A680B8B00FB2115 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF32842A680B8B00FB2115 /* Operators.swift */; };
 		FAC888D72A66BF1400959ACF /* BitwiseCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC888D62A66BF1400959ACF /* BitwiseCalculatorApp.swift */; };
 		FAC888D92A66BF1400959ACF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC888D82A66BF1400959ACF /* ContentView.swift */; };
 		FAC888DB2A66BF1800959ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC888DA2A66BF1800959ACF /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		FAAF32782A67F9A000FB2115 /* ScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenView.swift; sourceTree = "<group>"; };
 		FAAF327A2A68017400FB2115 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		FAAF327E2A68090200FB2115 /* ButtonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsModel.swift; sourceTree = "<group>"; };
+		FAAF32822A680B6900FB2115 /* Digits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digits.swift; sourceTree = "<group>"; };
+		FAAF32842A680B8B00FB2115 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		FAC888D32A66BF1400959ACF /* BitwiseCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitwiseCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC888D62A66BF1400959ACF /* BitwiseCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitwiseCalculatorApp.swift; sourceTree = "<group>"; };
 		FAC888D82A66BF1400959ACF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +81,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FAAF32802A680AA100FB2115 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAAF327E2A68090200FB2115 /* ButtonsModel.swift */,
+				FAAF32822A680B6900FB2115 /* Digits.swift */,
+				FAAF32842A680B8B00FB2115 /* Operators.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAAF32812A680ABB00FB2115 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAC888D82A66BF1400959ACF /* ContentView.swift */,
+				FAAF32782A67F9A000FB2115 /* ScreenView.swift */,
+				FAAF327A2A68017400FB2115 /* CalculatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FAC888CA2A66BF1400959ACF = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				FAC888D62A66BF1400959ACF /* BitwiseCalculatorApp.swift */,
-				FAC888D82A66BF1400959ACF /* ContentView.swift */,
-				FAAF32782A67F9A000FB2115 /* ScreenView.swift */,
-				FAAF327A2A68017400FB2115 /* CalculatorView.swift */,
+				FAAF32802A680AA100FB2115 /* Models */,
+				FAAF32812A680ABB00FB2115 /* Views */,
 				FAC888DA2A66BF1800959ACF /* Assets.xcassets */,
 				FAC888DC2A66BF1800959ACF /* Preview Content */,
 			);
@@ -264,9 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAF327B2A68017400FB2115 /* CalculatorView.swift in Sources */,
+				FAAF32832A680B6900FB2115 /* Digits.swift in Sources */,
+				FAAF32852A680B8B00FB2115 /* Operators.swift in Sources */,
 				FAAF32792A67F9A100FB2115 /* ScreenView.swift in Sources */,
 				FAC888D92A66BF1400959ACF /* ContentView.swift in Sources */,
 				FAC888D72A66BF1400959ACF /* BitwiseCalculatorApp.swift in Sources */,
+				FAAF327F2A68090200FB2115 /* ButtonsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
