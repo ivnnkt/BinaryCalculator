@@ -25,6 +25,7 @@ struct CalculatorView: View {
             calculatorScreen
             buttonPad
         }
+        .padding(Constants.padding)
         .background(Color.black)
     }
 }
@@ -51,16 +52,11 @@ extension CalculatorView {
     }
     
     private var buttonPad: some View {
-        VStack{
+        VStack(spacing: Constants.padding) {
             ForEach(buttons, id: \.self) { row in
-                HStack{
+                HStack(spacing: Constants.padding) {
                     ForEach(row, id: \.self) { buttonType in
-                        Button(buttonType.description){}
-                            .buttonStyle(CalculatorButtonStyle(
-                                size: 80,
-                                backgroundColor: buttonType.backgroundColor,
-                                foregroundColor: buttonType.foregroundColor)
-                            )
+                        CalculatorButton(buttonType: buttonType)
                     }
                 }
             }

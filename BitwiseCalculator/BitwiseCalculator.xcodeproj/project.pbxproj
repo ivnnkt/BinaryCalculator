@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FAAA81FF2A715F2B00ADBD79 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA81FE2A715F2B00ADBD79 /* ButtonStyle.swift */; };
+		FAAA82022A717E1B00ADBD79 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA82012A717E1B00ADBD79 /* CalculatorButton.swift */; };
+		FAAA82042A71808500ADBD79 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA82032A71808500ADBD79 /* Constants.swift */; };
 		FAAF32792A67F9A100FB2115 /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF32782A67F9A000FB2115 /* ScreenView.swift */; };
 		FAAF327B2A68017400FB2115 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF327A2A68017400FB2115 /* CalculatorView.swift */; };
 		FAAF327F2A68090200FB2115 /* ButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF327E2A68090200FB2115 /* ButtonsModel.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		FAAA81FE2A715F2B00ADBD79 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		FAAA82012A717E1B00ADBD79 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
+		FAAA82032A71808500ADBD79 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FAAF32782A67F9A000FB2115 /* ScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenView.swift; sourceTree = "<group>"; };
 		FAAF327A2A68017400FB2115 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		FAAF327E2A68090200FB2115 /* ButtonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsModel.swift; sourceTree = "<group>"; };
@@ -91,6 +95,14 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		FAAA82002A717DE500ADBD79 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA82012A717E1B00ADBD79 /* CalculatorButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		FAAF32802A680AA100FB2115 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 		FAAF32812A680ABB00FB2115 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAAA82002A717DE500ADBD79 /* Components */,
 				FAC888D82A66BF1400959ACF /* ContentView.swift */,
 				FAAF32782A67F9A000FB2115 /* ScreenView.swift */,
 				FAAF327A2A68017400FB2115 /* CalculatorView.swift */,
@@ -134,6 +147,7 @@
 		FAC888D52A66BF1400959ACF /* BitwiseCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				FAAA82032A71808500ADBD79 /* Constants.swift */,
 				FAC888D62A66BF1400959ACF /* BitwiseCalculatorApp.swift */,
 				FAAA81FB2A715CF000ADBD79 /* Styles */,
 				FAAF32802A680AA100FB2115 /* Models */,
@@ -300,9 +314,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAF327B2A68017400FB2115 /* CalculatorView.swift in Sources */,
+				FAAA82022A717E1B00ADBD79 /* CalculatorButton.swift in Sources */,
 				FAAA81FF2A715F2B00ADBD79 /* ButtonStyle.swift in Sources */,
 				FAAF32832A680B6900FB2115 /* Digits.swift in Sources */,
 				FAAF32852A680B8B00FB2115 /* Operators.swift in Sources */,
+				FAAA82042A71808500ADBD79 /* Constants.swift in Sources */,
 				FAAF32792A67F9A100FB2115 /* ScreenView.swift in Sources */,
 				FAC888D92A66BF1400959ACF /* ContentView.swift in Sources */,
 				FAC888D72A66BF1400959ACF /* BitwiseCalculatorApp.swift in Sources */,
