@@ -12,6 +12,7 @@ struct BitwiseCalculatorApp: App {
     var body: some Scene {
         WindowGroup {
             CalculatorView()
+                .environmentObject(CalculatorView.ViewModel())
         }
     }
 }

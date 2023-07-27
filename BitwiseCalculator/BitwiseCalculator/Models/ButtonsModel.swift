@@ -11,7 +11,7 @@ import SwiftUI
 enum Buttons: Hashable, CustomStringConvertible {
     
 //MARK: -    Buttons for operands
-    case digit(_ digit: Digits)
+    case digit(_ digit: Digit)
     
 //MARK: - For Hex calculator
 //    case a
